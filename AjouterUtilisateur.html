@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8" />
+
+	<title> Formulaires Ajouter Utilisateur </title>
+	<!--Feuilles de style -->
+	<link rel="stylesheet" href="../css/reset.css" />
+	<link rel="stylesheet" href="../css/reset.css" />
+</head>
+<!--
+<style type="text/css">
+	:invalid{
+		background-color: #FF0000;
+	}
+	:valid{
+		background-color: #ddffdd;
+	}
+	:irequired{
+		background-color: #FFCACA;
+	}
+</style>
+-->
+<center>
+<body style="background-color: #FFFFFF">
+	
+	<div style="padding-top: 20%; padding-bottom: 20%; text-align: center">
+		<header>
+			<h1> Formulaires Ajouter Utilisateur</h1>
+		</header>
+
+	<div>
+		<form>   
+		<!--	<p>
+				<input type="checkbox" name="Identite" value="Homme" /> Homme
+				<br />
+				<input type="checkbox" name="Identite" value="Femme" /> Femme
+				</p>
+		-->
+			<p>
+				<input type="radio" name="genre" value="Homme">
+				Homme
+				<br/>
+				<input type="radio" name="genre" value="Femme">
+				Femme
+			</p>		
+			<p>
+				<label for="text"> Nom :</label>
+				<input type="text" name="nom" size="30" placeholder="Nom" autofocus="on" required />
+			</p>
+			<p>
+				<label for="text"> Prénom :</label>
+				<input type="text" name="Prenom" size="30" placeholder="Prenom" autofocus="on" />
+			</p>
+			<p>
+				<label for="text"> Date de Naissance :</label>
+				<input type="date" name="Date de Naissance" size="30" placeholder="Date de Naissance"/>
+			</p>
+			<p>
+				<label for="text"> Date Embauche :</label>
+				<input type="date" name="Date Embauche" size="30" placeholder="Date Embauche" />
+			</p>
+			<p>
+				<label for="text"> Email :</label>
+				<input type="text" name="email" id="email" placeholder="votre email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$">
+			</p>
+			<p>
+				<label for="test"> N° Sécurité Sociale :</label>
+				<input type="text" name="Securite Sociale" size="30" placeholder="Securite Sociale" />
+			</p>
+			<p>
+				<label>Tel :</label>
+				<input type="tel" name="tel"  pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$"required/>
+			</p>
+			<p>
+				<label for="text">Adress :</label>
+				<input type="text" name="Adress" size="50" placeholder="Adress">
+			</p>
+			<p>
+				<label for="text">Code Postal :</label>
+				<input type="text" pattern="[0-9]{5}" placeholder="00000">
+			</p>	
+			<p>	
+				<label for="text"> Mot de Passe :</label>
+				<input type="password" name="password" size="30" placeholder="Mot de Passe"  />
+			</p>
+			<p>
+				<select name="Poste" >
+					<option value="Educateur">Educateur</option>
+					<option value="AssFam">Assistante Familliale</option>
+					<option value="ChefService">Chef de Service</option>
+					<option value="Secritaire">Secritaire</option>
+					<option value="HommeEntretien">Homme Entretien</option>
+				</select>
+			</p>
+			<!-- TextArea pour les Conmentaire-->
+			<p>
+				<textarea rows="10" cols="60"> Rentrez ici vos Commentaire </textarea>
+			</p>
+
+			<!--Bouton-->
+			<p>
+				<input type="submit" value="Envoyer">									<!--Envoyer les Informations-->
+				<input type="reset" value="Annuler">			<!--Rénitialisation du Formulair-->
+			</p>
+		</form>
+	</div>
+	</center>
+	
+</body>
+
+</html>
